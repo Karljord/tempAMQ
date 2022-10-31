@@ -1,0 +1,23 @@
+users:
+  - name: Leo
+    password: leospass
+    topics:
+      - name: LeosTopic
+        roles: [producer, consumer]
+      - name: LeosAndraTopic
+        roles: [producer]
+    queues:
+      - name: LeosQueue
+        roles: [producer]
+
+  - name: Pontus
+    password: PontusPass
+    topics:
+      - name: LeosTopic
+        roles: [consumer]
+      - name: LeosAndraTopic
+        roles: [consumer]
+    queues:
+      - name: LeoQueue
+        roles: [consumer]
+
